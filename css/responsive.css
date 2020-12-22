@@ -55,6 +55,9 @@
     .rose_pic{
       width: 25%;
     }
+    .vratham_div{
+      height: 55%;
+    }
   }
 
   @media only screen and (min-width: 600px) {
