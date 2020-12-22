@@ -32,7 +32,7 @@
       top: -8px;
     }
     .footer_bg{
-        background-image: url('../images/pre/footer_mobile.png');
+        background-image: url('../images/123.jpg');
         height: 150px;
     }
     #countdown .calender, #header .calender{
@@ -64,7 +64,7 @@
       height: 76vw;
     }
     .footer_bg{
-        background-image: url('../images/pre/footer.png');
+        background-image: url('../images/123.jpg');
     }
     .vratham_div{
       height: 173px;
@@ -85,10 +85,19 @@
       margin: auto;
     }
     .footer_bg{
-        background-image: url('../images/pre/footer.png');
+        background-image: url('../images/123.jpg');
+        background-size: contain;
     }
     .company_profile {
         margin-bottom: -18px;
     }
-
+    .reception .col-md-6{
+      margin-bottom: -13%;
+    }
+    .gallery{
+      margin-top: 6%;
+    }
+    .live_stream{
+      margin-top: 12%;
+    }
   }
