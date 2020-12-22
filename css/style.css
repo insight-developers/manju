@@ -1,5 +1,11 @@
-#header h1, .reception h3, .live_stream h2, .final_block h2, .our_story h2, .gallery h2{
-  font-family: 'Engagement', cursive;
+@font-face {
+  font-family: myFirstFont;
+  src: url(Cookie-Regular.ttf);
+}
+#header h1, .reception h3, .live_stream h2, .final_block h2, .our_story h2, .gallery h2, .wedding-couple h3{
+  /*font-family: 'Engagement', cursive;*/
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: myFirstFont;
 }
 #header h1{
   font-size:7vw;
@@ -32,13 +38,14 @@
 .getting_married_btn{
   border: none;
   background-color: #ffc551;
-  color: #000;
+  color: #fff;
   padding: 3px 10px;
   border-radius: 4px;
   text-transform: uppercase;
   font-size: 14px;
   font-style: italic;
   width: 220px;
+  font-weight: bold;
 }
 .red_head{
   color: #fff;
@@ -46,6 +53,11 @@
   font-style: italic;
   font-size: 22px; 
   font-weight: bold;
+}
+.rose_pic{
+  width: 180px;
+  height: 150px;
+  object-fit: contain;
 }
 .header_content h2{
   background-color: #ffc551;
@@ -55,14 +67,16 @@
   text-align: center;
   padding-top: 5%;
 }
-
+.our_story h2{
+  padding-top: 2%;
+}
 .our_story p{
   padding: 2% 1%;
 }
 
 /* countdown */
 #countdown{
-  background-color: #ffc551;
+  background-color: #df4f4f;
   /*background-color: royalblue;*/
   border-radius: 35px;
   /* padding: 4% 0; */
@@ -99,12 +113,13 @@
   list-style-type: none;
   padding: 0 20px 30px;
   text-transform: uppercase;
-  /*color:white;*/
+  color:white;
 }
 
 #countdown li span {
   display: block;
   font-size: 4vw;
+  color: #fff;
 }
 
 /* .message {
@@ -127,8 +142,8 @@
   top: -35px;
   object-fit: contain;
 }
-.reception, .final_block{
-  padding-top: 15%;
+.reception{
+  padding-top: 5%;
 }
 .final_block{
   padding-top: 10%;
@@ -145,6 +160,9 @@
   width: 300px;
   display: block;
   margin: auto auto 20%;
+  background-color: #ffc551;
+  color: #fff;
+  font-weight: bold;
 }
 .vratham_div .events{
   margin-top: -22px;
@@ -186,6 +204,7 @@
   font-style: 14px;
   color: #ffffff;
   padding: 10px 0;
+  margin: 0
 }
 .company_profile p a{
   color: #ffffff;
@@ -194,4 +213,82 @@
   background: #000;
   display: block;
   margin: auto;
+}
+
+
+
+/*particles*/
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: #000011;*/
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+#story{
+  position: relative;
+}
+
+/*count*/
+.count{
+  display: flex;
+  width: 670px;
+  margin: 0 auto;
+}
+.count_d{
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  margin: 0 5px;
+  background-image: linear-gradient(to right,  #ffe066
+,#ffff99,#ffe066);
+  opacity:0.8;
+  color: #80b3ff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.count_d:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.count_d span{
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+}
+.count_d h2{
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #d279d2;
+}
+.wedding-couple h3{
+  font-size: 34px;
+  color: #ffc551;
+  font-weight: bold;
+}
+.wedding-couple img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.wedding-couple{
+  padding:5% 0 3%; 
 }
